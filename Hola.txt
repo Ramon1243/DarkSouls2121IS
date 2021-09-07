@@ -1,7 +1,0 @@
-Hola mundo
-
-
-Modificacion desde servidor
-
-
-End.
