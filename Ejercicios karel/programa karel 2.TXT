@@ -1,0 +1,40 @@
+class program {
+void norte(){ while (notFacingNorth){ turnleft(); }}
+void sur  (){ while (notFacingSouth){ turnleft(); }}
+void este (){ while (notFacingEast) { turnleft(); }}
+void oeste(){ while (notFacingWest) { turnleft(); }}
+void derecha () { iterate (3) { turnleft () ; }}
+
+void recojer (){ while (nextToABeeper){ pickbeeper () ; }}
+void dejar () { while (anyBeepersInBeeperBag)  { putbeeper(); }}
+void mediavuelta () { turnleft (); turnleft () ; }
+
+void inicio () { while  (frontIsClear&&nextToABeeper) { recojer() ; move () ;
+if (frontIsClear&&notNextToABeeper) { mediavuelta () ; }
+if(frontIsBlocked&&facingNorth) { recojer () ; mediavuelta() ;}
+while (frontIsClear&&facingSouth) { move () ;
+if(frontIsBlocked){ dejar (); turnleft () ; move () ; turnleft ();}
+}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+program() {
+
+     inicio();
+
+
+    turnoff();
+}
+
+}
