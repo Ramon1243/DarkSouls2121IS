@@ -1,0 +1,31 @@
+<script>
+var total = 0;
+var n1;
+var n2;
+var operacion = prompt("operacion:");
+n1= parseInt(prompt("ingrese el primer numero:"));
+n2= parseInt(prompt("ingrese el segundo numero:"));
+
+switch(operacion){
+    case "suma":
+        sumarDosnumeros(n1,n2);
+        break;
+        case "resta":
+            restarDosnumeros(n1,n2);
+        break;
+        default:
+            alert("operacion no valida");
+            break;
+               
+
+}
+console.log (total);
+function sumarDosnumeros(n1,n2){
+      total = n1 + n2;
+      return total;
+}
+function restarDosnumeros(n1,n2){
+    total = n1- n2;
+    return total;
+}
+</script>
